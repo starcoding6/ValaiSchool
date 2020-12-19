@@ -1,32 +1,43 @@
 <div class="card card-custom gutter-b">
   <div class="card-header">
     <div class="card-title">
-      <h3 class="card-label">Customers list</h3>
+      <h3 class="card-label">Course list</h3>
     </div>
-    <div class="card-toolbar">
+    <!-- <div class="card-toolbar">
       <button type="button" class="btn btn-primary" (click)="create()">New Customer</button>
-    </div>
+    </div> -->
   </div>
   <div class="card-body">
     <!-- begin: Filtration form -->
     <div class="form form-label-right">
       <div class="form-group row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="row" [formGroup]="filterGroup">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <select class="form-control" name="status" placeholder="Filter by Status" formControlName="status">
-                <option value="">All</option>
-                <option value="1">Susspended</option>
-                <option value="2">Active</option>
-                <option value="3">Pending</option>
-              </select><small class="form-text text-muted"><b>Filter</b> by Status</small>
+                <option value="" disabled>Select</option>
+                <option value="1">Andhra Pradesh</option>
+                <option value="2">Telangana</option>
+              </select><small class="form-text text-muted"><b>Filter</b> by State</small>
             </div>
-            <div class="col-lg-6">
-              <select class="form-control" placeholder="Filter by Type" name="type" formControlName="type">
-                <option value="">All</option>
-                <option value="1">Business</option>
-                <option value="2">Individual</option>
-              </select><small class="form-text text-muted"><b>Filter</b> by Type</small>
+            <div class="col-lg-4">
+              <select class="form-control" placeholder="Filter by Language" name="type" formControlName="type">
+                <option value="" disabled>Select</option>
+                <option value="1">English</option>
+                <option value="2">Telugu</option>
+              </select><small class="form-text text-muted"><b>Filter</b> by Language</small>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" placeholder="Filter by Subject" name="subject" formControlName="subject">
+                <option value="" disabled>Select</option>
+                <option value="1">Mathematics</option>
+                <option value="2">Physics</option>
+                <option value="3">Chemistry</option>
+                <option value="4">Biology</option>
+                <option value="5">Hindi</option>
+                <option value="6">English</option>
+                <option value="7">Telugu</option>
+              </select><small class="form-text text-muted"><b>Filter</b> by Subject</small>
             </div>
           </div>
         </div>
@@ -70,7 +81,32 @@
     <!-- end: Grouping -->
 
     <!-- begin:Table -->
-    <div class="table-responsive angular-bootstrap-table">
+
+    <div class="thumbnail-wrapper pt-10">
+      <div class="card-main-body col-lg-3 col-md-4 col-sm-6 pb-10 px-xs-0" *ngFor="let customer of customerService.items$ | async">
+        <div class="card">
+        <div class="card-image">
+          <img src="./assets/media/stock-600x400/img-72.jpg" class="card-img-top" alt="course-img" />
+        </div>
+        <div class="thumb-bottom p-3">
+          <div class="card-body-title">
+            <h4 class="pt-3">{{customer.subject}}</h4>
+           
+            <p class="m-0 footer-game pb-3"> <span class="text-muted font-weight-bold font-size-sm">
+              Teacher: <span class="text-primary font-weight-bold">{{customer.firstName}} {{customer.lastName}}</span>
+            </span></p>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="thumb-footer pt-3">
+              <button class="btn btn-success btn-shadow-hover font-weight-bolder w-70 py-3 cursor-pointer">Go To Course</button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="table-responsive angular-bootstrap-table">
       <table class="table table-head-custom table-vertical-center overflow-hidden">
         <thead>
           <th class="selection-cell-header" data-row-selection="true">
@@ -161,7 +197,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
     <!-- end: Table -->
     <app-paginator class="d-flex justify-content-between align-items-center flex-wrap" [paginator]="paginator"
       [isLoading]="isLoading" (paginate)="paginate($event)"></app-paginator>

@@ -81,6 +81,7 @@ export class CustomersComponent
     this.filterGroup = this.fb.group({
       status: [''],
       type: [''],
+      subject: [''],
       searchTerm: [''],
     });
     this.subscriptions.push(

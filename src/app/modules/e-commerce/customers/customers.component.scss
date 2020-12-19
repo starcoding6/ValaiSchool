@@ -1,0 +1,14 @@
+.thumbnail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+      box-shadow: 0 0 50px 0 rgba(82,63,105,.15);
+      .card-body-title {
+        h4,.footer-game {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+  }
+}

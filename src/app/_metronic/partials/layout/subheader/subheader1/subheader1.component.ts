@@ -19,6 +19,7 @@ export class Subheader1Component implements OnInit {
   breadcrumbs: BreadcrumbItemModel[] = [];
   description$: Observable<string>;
   @Input() title: string;
+  today = new Date();
 
   constructor(
     private layout: LayoutService,
@@ -41,8 +42,10 @@ export class Subheader1Component implements OnInit {
     this.subheaderDisplayDaterangepicker = this.layout.getProp(
       'subheader.displayDaterangepicker'
     );
+    console.log('breadcrumbs',this.breadcrumbs$);
     this.breadcrumbs$.subscribe((res) => {
       this.breadcrumbs = res;
+      console.log('breadcrumbs',this.breadcrumbs);
       this.cdr.detectChanges();
     });
   }

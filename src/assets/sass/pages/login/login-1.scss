@@ -110,8 +110,9 @@
 @include media-breakpoint-down(xs) {
     .login.login-1 {
         .aside-img {
-            min-height: 300px !important;
-            background-size: 400px;
+            display: none !important;
+            // min-height: 300px !important;
+            // background-size: 400px;
         }
 
         .login-content {

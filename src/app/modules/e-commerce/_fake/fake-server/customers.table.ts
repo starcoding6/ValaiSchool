@@ -13,7 +13,8 @@ export class CustomersTable {
       type: 2,
       _userId: 1,
       _createdDate: '09/07/2016',
-      _updatedDate: '05/31/2013'
+      _updatedDate: '05/31/2013',
+      subject: 'Data structure and Mining'
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ export class CustomersTable {
       type: 2,
       _userId: 2,
       _createdDate: '18/03/2014',
-      _updatedDate: '08/17/2016'
+      _updatedDate: '08/17/2016',
+      subject: 'Chapter 1: Real Numbers'
     },
     {
       id: 3,
@@ -43,7 +45,8 @@ export class CustomersTable {
       type: 2,
       _userId: 1,
       _createdDate: '07/03/2015',
-      _updatedDate: '01/28/2015'
+      _updatedDate: '01/28/2015',
+      subject: 'Arithmetic Progression'
     },
     {
       id: 4,
@@ -58,7 +61,8 @@ export class CustomersTable {
       type: 1,
       _userId: 2,
       _createdDate: '06/22/2013',
-      _updatedDate: '01/31/2011'
+      _updatedDate: '01/31/2011',
+      subject: 'Verbs & Preposition'
     },
     {
       id: 5,
@@ -73,7 +77,8 @@ export class CustomersTable {
       type: 2,
       _userId: 1,
       _createdDate: '01/30/2018',
-      _updatedDate: '05/22/2014'
+      _updatedDate: '05/22/2014',
+      subject: 'IOT'
     },
     {
       id: 6,
@@ -88,7 +93,8 @@ export class CustomersTable {
       type: 2,
       _userId: 1,
       _createdDate: '03/27/2011',
-      _updatedDate: '09/02/2015'
+      _updatedDate: '09/02/2015',
+      subject: 'Programming and Data Structures'
     },
     {
       id: 7,
@@ -103,7 +109,8 @@ export class CustomersTable {
       type: 2,
       _userId: 1,
       _createdDate: '09/05/2011',
-      _updatedDate: '06/21/2012'
+      _updatedDate: '06/21/2012',
+      subject: 'Computer Communication Networks'
     },
     {
       id: 8,
@@ -118,7 +125,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '09/09/2017',
-      _updatedDate: '06/27/2011'
+      _updatedDate: '06/27/2011',
+      subject: 'Mathematical Foundations'
     },
     {
       id: 9,
@@ -133,7 +141,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '07/16/2011',
-      _updatedDate: '05/24/2014'
+      _updatedDate: '05/24/2014',
+      subject: 'Statistical Computing'
     },
     {
       id: 10,
@@ -148,7 +157,8 @@ export class CustomersTable {
       type: 1,
       _userId: 2,
       _createdDate: '03/25/2011',
-      _updatedDate: '12/13/2015'
+      _updatedDate: '12/13/2015',
+      subject: 'Data structure and Mining'
     },
     {
       id: 11,
@@ -163,7 +173,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '11/01/2015',
-      _updatedDate: '02/16/2013'
+      _updatedDate: '02/16/2013',
+      subject: 'Operating Systems'
     },
     {
       id: 12,
@@ -178,7 +189,8 @@ export class CustomersTable {
       type: 1,
       _userId: 2,
       _createdDate: '12/12/2017',
-      _updatedDate: '02/22/2013'
+      _updatedDate: '02/22/2013',
+      subject: 'Data structure and Mining'
     },
     {
       id: 13,
@@ -193,7 +205,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '08/14/2014',
-      _updatedDate: '08/03/2014'
+      _updatedDate: '08/03/2014',
+      subject: 'Introduction of Management Functions'
     },
     {
       id: 14,
@@ -208,7 +221,8 @@ export class CustomersTable {
       type: 1,
       _userId: 2,
       _createdDate: '12/07/2010',
-      _updatedDate: '09/24/2012'
+      _updatedDate: '09/24/2012',
+      subject: 'Introduction to Information Technology'
     },
     {
       id: 15,
@@ -223,7 +237,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '02/23/2013',
-      _updatedDate: '09/24/2016'
+      _updatedDate: '09/24/2016',
+      subject: 'Management Support Systems'
     },
     {
       id: 16,
@@ -238,7 +253,8 @@ export class CustomersTable {
       type: 1,
       _userId: 1,
       _createdDate: '09/08/2012',
-      _updatedDate: '10/29/2017'
+      _updatedDate: '10/29/2017',
+      subject: 'Mathematical Foundations'
     },
     {
       id: 17,

@@ -29,6 +29,7 @@ import { DeleteSpecsModalComponent } from './products/product-edit/specification
 import { FetchSpecsModalComponent } from './products/product-edit/specifications/fetch-specs-modal/fetch-specs-modal.component';
 import { EditRemarkModalComponent } from './products/product-edit/remarks/edit-remark-modal/edit-remark-modal.component';
 import { EditSpecModalComponent } from './products/product-edit/specifications/edit-spec-modal/edit-spec-modal.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { EditSpecModalComponent } from './products/product-edit/specifications/e
     InlineSVGModule,
     CRUDTableModule,
     NgbModalModule,
-    NgbDatepickerModule
+    NgbDatepickerModule,
+    MatDividerModule
   ],
   entryComponents: [
     DeleteCustomerModalComponent,

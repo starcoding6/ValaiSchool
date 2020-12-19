@@ -8,12 +8,16 @@
 	align-items: center;
 	flex-direction: row;
 	padding: 0 get($page-padding, desktop);
-	height: get($header-config, desktop, default, height);
+	height: 100px;
 
 	// Logo
 	.brand-logo {
 		display: flex;
-		justify-content: flex-begin;
+		justify-content: center;
+		width: 100%;
+		img {
+			height: 100px;
+		}
 
 		// Minimized Aside Mode
 		.aside-minimize:not(.aside-minimize-hover) & {

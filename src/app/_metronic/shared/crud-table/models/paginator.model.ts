@@ -1,4 +1,4 @@
-export const PageSizes = [3, 5, 10, 15, 50, 100];
+export const PageSizes = [3, 5, 8, 10, 16, 50, 100];
 
 export interface IPaginatorState {
   page: number;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { LayoutService } from '../../../../../core';
 
 @Component({
@@ -12,8 +13,10 @@ export class MixedWidget1Component implements OnInit {
   colorsGrayGray200 = '';
   colorsGrayGray300 = '';
   colorsThemeBaseDanger = '';
+  eventStreamingLink: any;
 
-  constructor(private layout: LayoutService) {
+  constructor(private layout: LayoutService,
+    private sanitizer: DomSanitizer) {
     this.fontFamily = this.layout.getProp('js.fontFamily');
     this.colorsGrayGray500 = this.layout.getProp('js.colors.gray.gray500');
     this.colorsGrayGray200 = this.layout.getProp('js.colors.gray.gray200');
@@ -21,6 +24,15 @@ export class MixedWidget1Component implements OnInit {
     this.colorsThemeBaseDanger = this.layout.getProp(
       'js.colors.theme.base.danger'
     );
+    this.eventStreamingLink =[
+      {vid1: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/U_wTfpYK_ms?feature=oembed')}, 
+      {vid2: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/U_wTfpYK_ms?feature=oembed')},
+      {vid3: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/U_wTfpYK_ms?feature=oembed')},
+      {vid4: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/U_wTfpYK_ms?feature=oembed')},
+     {vid5: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/U_wTfpYK_ms?feature=oembed')},
+
+    ]
+    
   }
 
   ngOnInit(): void {

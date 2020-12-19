@@ -18,7 +18,7 @@ import { TranslationModule } from '../../i18n/translation.module';
 import { TranslateModule } from '@ngx-translate/core';
 
 const fakeAuth = {
-  email: 'admin@demo.com',
+  email: 'smeet@gmail.com',
   password: 'demo',
 };
 
@@ -46,7 +46,7 @@ class FakeAuthService {
     const user = new UserModel();
     user.username = 'admin';
     user.password = 'demo';
-    user.email = 'admin@demo.com';
+    user.email = 'smeet@gmail.com';
     return of(user);
   }
 }
