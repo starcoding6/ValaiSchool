@@ -1,1 +1,13 @@
 @import "../../../../assets/sass/pages/wizard/wizard-1";
+
+.live-video-wrapper {
+    .current-video {
+        iframe {
+            max-width: 100%;
+        }
+    }
+}
+
+.fa-play-circle {
+    color: #1bc5bd;
+}

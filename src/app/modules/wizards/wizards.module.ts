@@ -8,6 +8,7 @@ import { Wizard2Component } from './wizard2/wizard2.component';
 import { Wizard3Component } from './wizard3/wizard3.component';
 import { Wizard4Component } from './wizard4/wizard4.component';
 import { WizardsRoutingModule } from './wizards-routing.module';
+import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [WizardsComponent, Wizard1Component, Wizard2Component, Wizard3Component, Wizard4Component],
@@ -16,6 +17,7 @@ import { WizardsRoutingModule } from './wizards-routing.module';
     FormsModule,
     InlineSVGModule,
     WizardsRoutingModule,
+    NgbProgressbarModule
   ]
 })
 export class WizardsModule { }
