@@ -12,11 +12,11 @@ const routes: Routes = [
     component: ECommerceComponent,
     children: [
       {
-        path: 'customers',
+        path: 'mycourses',
         component: CustomersComponent,
       },
       {
-        path: 'products',
+        path: 'myquiz',
         component: ProductsComponent,
       },
       {
@@ -31,8 +31,8 @@ const routes: Routes = [
         path: 'product/edit/:id',
         component: ProductEditComponent
       },
-      { path: '', redirectTo: 'customers', pathMatch: 'full' },
-      { path: '**', redirectTo: 'customers', pathMatch: 'full' },
+      { path: '', redirectTo: 'mycourses', pathMatch: 'full' },
+      { path: '**', redirectTo: 'mycourses', pathMatch: 'full' },
     ],
   },
 ];

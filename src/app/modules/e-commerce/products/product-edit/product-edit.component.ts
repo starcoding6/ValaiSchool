@@ -68,7 +68,7 @@ export class ProductEditComponent implements OnInit, OnDestroy {
       }),
     ).subscribe((res: Product) => {
       if (!res) {
-        this.router.navigate(['/products'], { relativeTo: this.route });
+        this.router.navigate(['/myquiz'], { relativeTo: this.route });
       }
 
       this.product = res;
@@ -135,7 +135,7 @@ export class ProductEditComponent implements OnInit, OnDestroy {
 
   edit() {
     const sbUpdate = this.productsService.update(this.product).pipe(
-      tap(() => this.router.navigate(['/ecommerce/products'])),
+      tap(() => this.router.navigate(['/home/myquiz'])),
       catchError((errorMessage) => {
         console.error('UPDATE ERROR', errorMessage);
         return of(this.product);
@@ -146,7 +146,7 @@ export class ProductEditComponent implements OnInit, OnDestroy {
 
   create() {
     const sbCreate = this.productsService.create(this.product).pipe(
-      tap(() => this.router.navigate(['/ecommerce/products'])),
+      tap(() => this.router.navigate(['/home/myquiz'])),
       catchError((errorMessage) => {
         console.error('UPDATE ERROR', errorMessage);
         return of(this.product);

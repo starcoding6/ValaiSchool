@@ -282,21 +282,21 @@ export const DynamicAsideMenuConfig = {
     },
     { section: 'Applications' },
     {
-      title: 'eCommerce',
+      title: 'Home',
       bullet: 'dot',
       icon: 'flaticon2-list-2',
       svg: './assets/media/svg/icons/Shopping/Cart3.svg',
       root: true,
       permission: 'accessToECommerceModule',
-      page: '/ecommerce',
+      page: '/home',
       submenu: [
         {
           title: 'Customers',
-          page: '/ecommerce/customers'
+          page: '/home/customers'
         },
         {
           title: 'Products',
-          page: '/ecommerce/products'
+          page: '/home/myquiz'
         },
       ]
     },
@@ -328,28 +328,28 @@ export const DynamicAsideMenuConfig = {
     },
     { section: 'Custom' },
     {
-      title: 'Wizards',
+      title: 'Lessons',
       root: true,
       bullet: 'dot',
       icon: 'flaticon2-mail-1',
       svg: './assets/media/svg/icons/Shopping/Box1.svg',
-      page: '/wizards',
+      page: '/lessons',
       submenu: [
         {
           title: 'Wizard 1',
-          page: '/wizards/wizard-1'
+          page: '/lessons/maths'
         },
         {
           title: 'Wizard 2',
-          page: '/wizards/wizard-2'
+          page: '/lessons/wizard-2'
         },
         {
           title: 'Wizard 3',
-          page: '/wizards/wizard-3'
+          page: '/lessons/wizard-3'
         },
         {
           title: 'Wizard 4',
-          page: '/wizards/wizard-4'
+          page: '/lessons/wizard-4'
         },
       ]
     },

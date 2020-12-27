@@ -13,7 +13,7 @@ const routes: Routes = [
     component: WizardsComponent,
     children: [
       {
-        path: 'wizard-1',
+        path: 'maths',
         component: Wizard1Component,
       },
       {
@@ -28,8 +28,8 @@ const routes: Routes = [
         path: 'wizard-4',
         component: Wizard4Component,
       },
-      { path: '', redirectTo: 'wizard-1', pathMatch: 'full' },
-      { path: '**', redirectTo: 'wizard-1', pathMatch: 'full' },
+      { path: '', redirectTo: 'maths', pathMatch: 'full' },
+      { path: '**', redirectTo: 'maths', pathMatch: 'full' },
     ],
   },
 ];

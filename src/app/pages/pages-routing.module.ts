@@ -18,7 +18,7 @@ const routes: Routes = [
           import('./builder/builder.module').then((m) => m.BuilderModule),
       },
       {
-        path: 'ecommerce',
+        path: 'home',
         loadChildren: () =>
           import('../modules/e-commerce/e-commerce.module').then(
             (m) => m.ECommerceModule
@@ -46,7 +46,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'wizards',
+        path: 'lessons',
         loadChildren: () =>
           import('../modules/wizards/wizards.module').then(
             (m) => m.WizardsModule

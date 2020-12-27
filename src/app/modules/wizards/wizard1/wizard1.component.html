@@ -5,8 +5,8 @@
             <h3 class="col-md-6 p-0 m-0 card-label">{{selectedTopic.chapter}}</h3>
             <div class="form-group m-0">
                 <label>Select Topic:</label>
-                <select name="topic" [(ngModel)]="topic" (ngModelChange)="onTopicChange($event)" class="form-control">
-                    <option *ngFor="let topic of subjectData" [ngValue]="topic.chapterValue">
+                <select name="topic" [(ngModel)]="selectedTopic" (ngModelChange)="onTopicChange($event)" class="form-control">
+                    <option *ngFor="let topic of subjectData" [ngValue]="topic">
                         {{topic.chapter}}
                     </option>
                 </select>

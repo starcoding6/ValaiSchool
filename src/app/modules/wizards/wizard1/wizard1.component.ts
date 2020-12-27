@@ -99,17 +99,14 @@ export class Wizard1Component implements OnInit, AfterViewInit, OnDestroy {
       ]
     }
   ]
-  selectedTopic: any;
+  selectedTopic = this.subjectData[0];
+  selectedVideo = this.selectedTopic.content[0];
   currentVideoStreamingLink: any;
-  selectedVideo: any;
+
   constructor(private sanitizer: DomSanitizer) {
   }
 
-
-
   ngOnInit(): void {
-    this.selectedTopic = this.subjectData[0];
-    this.selectedVideo = this.selectedTopic.content[0];
     this.updateSelectedData(0);
   }
 
@@ -132,11 +129,11 @@ export class Wizard1Component implements OnInit, AfterViewInit, OnDestroy {
   }
 
   onTopicChange(event) {
-    const foundIndex = this.subjectData.findIndex(elem => elem.chapterValue == event);
+    const foundIndex = this.subjectData.findIndex(elem => elem == event);
     if (foundIndex > -1) {
       this.selectedTopic = this.subjectData[foundIndex];
       this.selectedVideo = this.selectedTopic.content[0];
-      this.updateSelectedData(foundIndex);
+      this.updateSelectedData(0);
     }
   }
 
